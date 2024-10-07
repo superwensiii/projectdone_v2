@@ -156,7 +156,7 @@ background: linear-gradient(90deg, rgba(101,93,57,0.9640231092436975) 5%, rgba(1
 
 .header{
    
-   position: static;
+   position: sticky;
    top:0; left:0; right:0;
    background: rgb(190,190,190);
 background: linear-gradient(90deg, rgba(190,190,190,1) 2%, rgba(252,252,252,0.9192051820728291) 32%, rgba(251,251,251,1) 81%);
