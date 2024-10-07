@@ -67,7 +67,7 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <span>Upto 50% off</span>
             <h3>Popular this week!</h3>
-            <a href="category.php?category=mini fan" class="btn">Shop Now.</a>
+            <a href="category.php?category=minifan" class="btn">Shop Now.</a>
          </div>
       </div>
 
