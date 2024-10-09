@@ -1,30 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php'; // Make sure to include the Composer autoload file
-use GuzzleHttp\Client;
 
-$client = new Client();
-$response = $client->request('POST', 'https://api.paymongo.com/v1/links', [
-    'auth' => ['sk_test_C5XEyKYECoSCLxqLaqMeEgr3'],
-    'headers' => [
-        'Content-Type' => 'application/json',
-    ],
-    'json' => [
-       'data' => [
-            'attributes' => [
-                'amount' => 10000, // Amount in centavos (e.g., 10000 means PHP 100.00)
-                'description' => 'Payment for Order #12345',
-                'remarks' => 'Thank you for your purchase!',
-                'partial_payment' => false,
-                'currency' => 'PHP'
-                ]
-                ]
-
-
-    ],
-]);
-
-echo $response->getBody();
 
 include 'components/connect.php';
 
