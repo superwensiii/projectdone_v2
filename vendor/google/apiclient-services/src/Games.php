@@ -45,7 +45,6 @@ class Games extends \Google\Service
   const GAMES =
       "https://www.googleapis.com/auth/games";
 
-  public $accesstokens;
   public $achievementDefinitions;
   public $achievements;
   public $applications;
@@ -77,46 +76,6 @@ class Games extends \Google\Service
     $this->version = 'v1';
     $this->serviceName = 'games';
 
-    $this->accesstokens = new Games\Resource\Accesstokens(
-        $this,
-        $this->serviceName,
-        'accesstokens',
-        [
-          'methods' => [
-            'generatePlayGroupingApiToken' => [
-              'path' => 'games/v1/accesstokens/generatePlayGroupingApiToken',
-              'httpMethod' => 'POST',
-              'parameters' => [
-                'packageName' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-                'persona' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-              ],
-            ],'generateRecallPlayGroupingApiToken' => [
-              'path' => 'games/v1/accesstokens/generateRecallPlayGroupingApiToken',
-              'httpMethod' => 'POST',
-              'parameters' => [
-                'packageName' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-                'persona' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-                'recallSessionId' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-              ],
-            ],
-          ]
-        ]
-    );
     $this->achievementDefinitions = new Games\Resource\AchievementDefinitions(
         $this,
         $this->serviceName,
@@ -498,22 +457,7 @@ class Games extends \Google\Service
         'recall',
         [
           'methods' => [
-            'gamesPlayerTokens' => [
-              'path' => 'games/v1/recall/gamesPlayerTokens/{sessionId}',
-              'httpMethod' => 'GET',
-              'parameters' => [
-                'sessionId' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ],
-                'applicationIds' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ],
-              ],
-            ],'lastTokenFromAllDeveloperGames' => [
+            'lastTokenFromAllDeveloperGames' => [
               'path' => 'games/v1/recall/developerGamesLastPlayerToken/{sessionId}',
               'httpMethod' => 'GET',
               'parameters' => [

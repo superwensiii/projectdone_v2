@@ -25,10 +25,6 @@ class LoyaltyProgram extends \Google\Model
    * @var string
    */
   public $loyaltyPoints;
-  /**
-   * @var string
-   */
-  public $memberPriceEffectiveDate;
   protected $priceType = Price::class;
   protected $priceDataType = '';
   /**
@@ -67,20 +63,6 @@ class LoyaltyProgram extends \Google\Model
   public function getLoyaltyPoints()
   {
     return $this->loyaltyPoints;
-  }
-  /**
-   * @param string
-   */
-  public function setMemberPriceEffectiveDate($memberPriceEffectiveDate)
-  {
-    $this->memberPriceEffectiveDate = $memberPriceEffectiveDate;
-  }
-  /**
-   * @return string
-   */
-  public function getMemberPriceEffectiveDate()
-  {
-    return $this->memberPriceEffectiveDate;
   }
   /**
    * @param Price

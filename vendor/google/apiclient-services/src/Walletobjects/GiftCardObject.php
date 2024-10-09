@@ -70,10 +70,6 @@ class GiftCardObject extends \Google\Collection
    * @var string
    */
   public $kind;
-  /**
-   * @var string[]
-   */
-  public $linkedObjectIds;
   protected $linksModuleDataType = LinksModuleData::class;
   protected $linksModuleDataDataType = '';
   protected $locationsType = LatLongPoint::class;
@@ -88,8 +84,6 @@ class GiftCardObject extends \Google\Collection
   public $pin;
   protected $rotatingBarcodeType = RotatingBarcode::class;
   protected $rotatingBarcodeDataType = '';
-  protected $saveRestrictionsType = SaveRestrictions::class;
-  protected $saveRestrictionsDataType = '';
   /**
    * @var string
    */
@@ -346,20 +340,6 @@ class GiftCardObject extends \Google\Collection
     return $this->kind;
   }
   /**
-   * @param string[]
-   */
-  public function setLinkedObjectIds($linkedObjectIds)
-  {
-    $this->linkedObjectIds = $linkedObjectIds;
-  }
-  /**
-   * @return string[]
-   */
-  public function getLinkedObjectIds()
-  {
-    return $this->linkedObjectIds;
-  }
-  /**
    * @param LinksModuleData
    */
   public function setLinksModuleData(LinksModuleData $linksModuleData)
@@ -442,20 +422,6 @@ class GiftCardObject extends \Google\Collection
   public function getRotatingBarcode()
   {
     return $this->rotatingBarcode;
-  }
-  /**
-   * @param SaveRestrictions
-   */
-  public function setSaveRestrictions(SaveRestrictions $saveRestrictions)
-  {
-    $this->saveRestrictions = $saveRestrictions;
-  }
-  /**
-   * @return SaveRestrictions
-   */
-  public function getSaveRestrictions()
-  {
-    return $this->saveRestrictions;
   }
   /**
    * @param string

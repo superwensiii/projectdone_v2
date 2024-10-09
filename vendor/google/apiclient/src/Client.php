@@ -196,7 +196,6 @@ class Client
             'prompt' => '',
             'openid.realm' => '',
             'include_granted_scopes' => null,
-            'logger' => null,
             'login_hint' => '',
             'request_visible_actions' => '',
             'access_type' => 'online',
@@ -242,11 +241,6 @@ class Client
         if (!is_null($this->config['cache'])) {
             $this->setCache($this->config['cache']);
             unset($this->config['cache']);
-        }
-
-        if (!is_null($this->config['logger'])) {
-            $this->setLogger($this->config['logger']);
-            unset($this->config['logger']);
         }
     }
 

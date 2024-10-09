@@ -22,10 +22,6 @@ class ExternalDataSources extends \Google\Model
   /**
    * @var string
    */
-  public $assetType;
-  /**
-   * @var string
-   */
   public $name;
   /**
    * @var string
@@ -36,20 +32,6 @@ class ExternalDataSources extends \Google\Model
    */
   public $uri;
 
-  /**
-   * @param string
-   */
-  public function setAssetType($assetType)
-  {
-    $this->assetType = $assetType;
-  }
-  /**
-   * @return string
-   */
-  public function getAssetType()
-  {
-    return $this->assetType;
-  }
   /**
    * @param string
    */

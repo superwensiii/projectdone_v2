@@ -17,8 +17,6 @@
 
 namespace Google\Service\Aiplatform\Resource;
 
-use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesRequest;
-use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesResponse;
 use Google\Service\Aiplatform\GoogleCloudLocationListLocationsResponse;
 use Google\Service\Aiplatform\GoogleCloudLocationLocation;
 
@@ -32,22 +30,6 @@ use Google\Service\Aiplatform\GoogleCloudLocationLocation;
  */
 class ProjectsLocations extends \Google\Service\Resource
 {
-  /**
-   * Evaluates instances based on a given metric. (locations.evaluateInstances)
-   *
-   * @param string $location Required. The resource name of the Location to
-   * evaluate the instances. Format: `projects/{project}/locations/{location}`
-   * @param GoogleCloudAiplatformV1EvaluateInstancesRequest $postBody
-   * @param array $optParams Optional parameters.
-   * @return GoogleCloudAiplatformV1EvaluateInstancesResponse
-   * @throws \Google\Service\Exception
-   */
-  public function evaluateInstances($location, GoogleCloudAiplatformV1EvaluateInstancesRequest $postBody, $optParams = [])
-  {
-    $params = ['location' => $location, 'postBody' => $postBody];
-    $params = array_merge($params, $optParams);
-    return $this->call('evaluateInstances', [$params], GoogleCloudAiplatformV1EvaluateInstancesResponse::class);
-  }
   /**
    * Gets information about a location. (locations.get)
    *

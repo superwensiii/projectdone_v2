@@ -32,8 +32,6 @@ class ClusterUpdate extends \Google\Collection
   protected $desiredBinaryAuthorizationDataType = '';
   protected $desiredClusterAutoscalingType = ClusterAutoscaling::class;
   protected $desiredClusterAutoscalingDataType = '';
-  protected $desiredCompliancePostureConfigType = CompliancePostureConfig::class;
-  protected $desiredCompliancePostureConfigDataType = '';
   protected $desiredContainerdConfigType = ContainerdConfig::class;
   protected $desiredContainerdConfigDataType = '';
   protected $desiredCostManagementConfigType = CostManagementConfig::class;
@@ -142,14 +140,10 @@ class ClusterUpdate extends \Google\Collection
    * @var string
    */
   public $desiredPrivateIpv6GoogleAccess;
-  protected $desiredRbacBindingConfigType = RBACBindingConfig::class;
-  protected $desiredRbacBindingConfigDataType = '';
   protected $desiredReleaseChannelType = ReleaseChannel::class;
   protected $desiredReleaseChannelDataType = '';
   protected $desiredResourceUsageExportConfigType = ResourceUsageExportConfig::class;
   protected $desiredResourceUsageExportConfigDataType = '';
-  protected $desiredSecretManagerConfigType = SecretManagerConfig::class;
-  protected $desiredSecretManagerConfigDataType = '';
   protected $desiredSecurityPostureConfigType = SecurityPostureConfig::class;
   protected $desiredSecurityPostureConfigDataType = '';
   protected $desiredServiceExternalIpsConfigType = ServiceExternalIPsConfig::class;
@@ -256,20 +250,6 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredClusterAutoscaling()
   {
     return $this->desiredClusterAutoscaling;
-  }
-  /**
-   * @param CompliancePostureConfig
-   */
-  public function setDesiredCompliancePostureConfig(CompliancePostureConfig $desiredCompliancePostureConfig)
-  {
-    $this->desiredCompliancePostureConfig = $desiredCompliancePostureConfig;
-  }
-  /**
-   * @return CompliancePostureConfig
-   */
-  public function getDesiredCompliancePostureConfig()
-  {
-    return $this->desiredCompliancePostureConfig;
   }
   /**
    * @param ContainerdConfig
@@ -832,20 +812,6 @@ class ClusterUpdate extends \Google\Collection
     return $this->desiredPrivateIpv6GoogleAccess;
   }
   /**
-   * @param RBACBindingConfig
-   */
-  public function setDesiredRbacBindingConfig(RBACBindingConfig $desiredRbacBindingConfig)
-  {
-    $this->desiredRbacBindingConfig = $desiredRbacBindingConfig;
-  }
-  /**
-   * @return RBACBindingConfig
-   */
-  public function getDesiredRbacBindingConfig()
-  {
-    return $this->desiredRbacBindingConfig;
-  }
-  /**
    * @param ReleaseChannel
    */
   public function setDesiredReleaseChannel(ReleaseChannel $desiredReleaseChannel)
@@ -872,20 +838,6 @@ class ClusterUpdate extends \Google\Collection
   public function getDesiredResourceUsageExportConfig()
   {
     return $this->desiredResourceUsageExportConfig;
-  }
-  /**
-   * @param SecretManagerConfig
-   */
-  public function setDesiredSecretManagerConfig(SecretManagerConfig $desiredSecretManagerConfig)
-  {
-    $this->desiredSecretManagerConfig = $desiredSecretManagerConfig;
-  }
-  /**
-   * @return SecretManagerConfig
-   */
-  public function getDesiredSecretManagerConfig()
-  {
-    return $this->desiredSecretManagerConfig;
   }
   /**
    * @param SecurityPostureConfig

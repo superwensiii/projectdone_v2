@@ -32,8 +32,6 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
    * @var string
    */
   public $displayName;
-  protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
-  protected $encryptionSpecDataType = '';
   /**
    * @var string
    */
@@ -42,8 +40,6 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
    * @var string
    */
   public $healthState;
-  protected $idleShutdownConfigType = GoogleCloudAiplatformV1NotebookIdleShutdownConfig::class;
-  protected $idleShutdownConfigDataType = '';
   /**
    * @var bool
    */
@@ -70,6 +66,8 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
    * @var string
    */
   public $proxyUri;
+  protected $reservationAffinityType = GoogleCloudAiplatformV1NotebookReservationAffinity::class;
+  protected $reservationAffinityDataType = '';
   /**
    * @var string
    */
@@ -142,20 +140,6 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
     return $this->displayName;
   }
   /**
-   * @param GoogleCloudAiplatformV1EncryptionSpec
-   */
-  public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
-  {
-    $this->encryptionSpec = $encryptionSpec;
-  }
-  /**
-   * @return GoogleCloudAiplatformV1EncryptionSpec
-   */
-  public function getEncryptionSpec()
-  {
-    return $this->encryptionSpec;
-  }
-  /**
    * @param string
    */
   public function setExpirationTime($expirationTime)
@@ -182,20 +166,6 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
   public function getHealthState()
   {
     return $this->healthState;
-  }
-  /**
-   * @param GoogleCloudAiplatformV1NotebookIdleShutdownConfig
-   */
-  public function setIdleShutdownConfig(GoogleCloudAiplatformV1NotebookIdleShutdownConfig $idleShutdownConfig)
-  {
-    $this->idleShutdownConfig = $idleShutdownConfig;
-  }
-  /**
-   * @return GoogleCloudAiplatformV1NotebookIdleShutdownConfig
-   */
-  public function getIdleShutdownConfig()
-  {
-    return $this->idleShutdownConfig;
   }
   /**
    * @param bool
@@ -294,6 +264,20 @@ class GoogleCloudAiplatformV1NotebookRuntime extends \Google\Collection
   public function getProxyUri()
   {
     return $this->proxyUri;
+  }
+  /**
+   * @param GoogleCloudAiplatformV1NotebookReservationAffinity
+   */
+  public function setReservationAffinity(GoogleCloudAiplatformV1NotebookReservationAffinity $reservationAffinity)
+  {
+    $this->reservationAffinity = $reservationAffinity;
+  }
+  /**
+   * @return GoogleCloudAiplatformV1NotebookReservationAffinity
+   */
+  public function getReservationAffinity()
+  {
+    return $this->reservationAffinity;
   }
   /**
    * @param string

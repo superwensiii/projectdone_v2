@@ -20,10 +20,6 @@ namespace Google\Service\CloudAlloyDBAdmin;
 class StorageDatabasecenterPartnerapiV1mainAvailabilityConfiguration extends \Google\Model
 {
   /**
-   * @var bool
-   */
-  public $automaticFailoverRoutingConfigured;
-  /**
    * @var string
    */
   public $availabilityType;
@@ -40,20 +36,6 @@ class StorageDatabasecenterPartnerapiV1mainAvailabilityConfiguration extends \Go
    */
   public $promotableReplicaConfigured;
 
-  /**
-   * @param bool
-   */
-  public function setAutomaticFailoverRoutingConfigured($automaticFailoverRoutingConfigured)
-  {
-    $this->automaticFailoverRoutingConfigured = $automaticFailoverRoutingConfigured;
-  }
-  /**
-   * @return bool
-   */
-  public function getAutomaticFailoverRoutingConfigured()
-  {
-    return $this->automaticFailoverRoutingConfigured;
-  }
   /**
    * @param string
    */

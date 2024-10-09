@@ -27,8 +27,6 @@ class ExternalTransaction extends \Google\Model
   protected $currentPreTaxAmountDataType = '';
   protected $currentTaxAmountType = Price::class;
   protected $currentTaxAmountDataType = '';
-  protected $externalOfferInitialAcquisitionDetailsType = ExternalOfferInitialAcquisitionDetails::class;
-  protected $externalOfferInitialAcquisitionDetailsDataType = '';
   /**
    * @var string
    */
@@ -47,10 +45,6 @@ class ExternalTransaction extends \Google\Model
   protected $recurringTransactionDataType = '';
   protected $testPurchaseType = ExternalTransactionTestPurchase::class;
   protected $testPurchaseDataType = '';
-  /**
-   * @var int
-   */
-  public $transactionProgramCode;
   /**
    * @var string
    */
@@ -103,20 +97,6 @@ class ExternalTransaction extends \Google\Model
   public function getCurrentTaxAmount()
   {
     return $this->currentTaxAmount;
-  }
-  /**
-   * @param ExternalOfferInitialAcquisitionDetails
-   */
-  public function setExternalOfferInitialAcquisitionDetails(ExternalOfferInitialAcquisitionDetails $externalOfferInitialAcquisitionDetails)
-  {
-    $this->externalOfferInitialAcquisitionDetails = $externalOfferInitialAcquisitionDetails;
-  }
-  /**
-   * @return ExternalOfferInitialAcquisitionDetails
-   */
-  public function getExternalOfferInitialAcquisitionDetails()
-  {
-    return $this->externalOfferInitialAcquisitionDetails;
   }
   /**
    * @param string
@@ -215,20 +195,6 @@ class ExternalTransaction extends \Google\Model
   public function getTestPurchase()
   {
     return $this->testPurchase;
-  }
-  /**
-   * @param int
-   */
-  public function setTransactionProgramCode($transactionProgramCode)
-  {
-    $this->transactionProgramCode = $transactionProgramCode;
-  }
-  /**
-   * @return int
-   */
-  public function getTransactionProgramCode()
-  {
-    return $this->transactionProgramCode;
   }
   /**
    * @param string

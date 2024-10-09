@@ -346,10 +346,6 @@ class Storage extends \Google\Service
                   'type' => 'string',
                   'required' => true,
                 ],
-                'generation' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
                 'ifMetagenerationMatch' => [
                   'location' => 'query',
                   'type' => 'string',
@@ -361,10 +357,6 @@ class Storage extends \Google\Service
                 'projection' => [
                   'location' => 'query',
                   'type' => 'string',
-                ],
-                'softDeleted' => [
-                  'location' => 'query',
-                  'type' => 'boolean',
                 ],
                 'userProject' => [
                   'location' => 'query',
@@ -385,20 +377,6 @@ class Storage extends \Google\Service
                   'type' => 'integer',
                 ],
                 'userProject' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-              ],
-            ],'getStorageLayout' => [
-              'path' => 'b/{bucket}/storageLayout',
-              'httpMethod' => 'GET',
-              'parameters' => [
-                'bucket' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ],
-                'prefix' => [
                   'location' => 'query',
                   'type' => 'string',
                 ],
@@ -458,10 +436,6 @@ class Storage extends \Google\Service
                   'location' => 'query',
                   'type' => 'string',
                 ],
-                'softDeleted' => [
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ],
                 'userProject' => [
                   'location' => 'query',
                   'type' => 'string',
@@ -514,25 +488,6 @@ class Storage extends \Google\Service
                 'projection' => [
                   'location' => 'query',
                   'type' => 'string',
-                ],
-                'userProject' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-              ],
-            ],'restore' => [
-              'path' => 'b/{bucket}/restore',
-              'httpMethod' => 'POST',
-              'parameters' => [
-                'bucket' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ],
-                'generation' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                  'required' => true,
                 ],
                 'userProject' => [
                   'location' => 'query',
@@ -1487,10 +1442,6 @@ class Storage extends \Google\Service
                   'location' => 'query',
                   'type' => 'string',
                 ],
-                'restoreToken' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
                 'softDeleted' => [
                   'location' => 'query',
                   'type' => 'boolean',
@@ -1726,10 +1677,6 @@ class Storage extends \Google\Service
                   'type' => 'string',
                 ],
                 'projection' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
-                'restoreToken' => [
                   'location' => 'query',
                   'type' => 'string',
                 ],

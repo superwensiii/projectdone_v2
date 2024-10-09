@@ -19,7 +19,7 @@ namespace Google\Service\AccessContextManager;
 
 class GcpUserAccessBinding extends \Google\Collection
 {
-  protected $collection_key = 'scopedAccessSettings';
+  protected $collection_key = 'restrictedClientApplications';
   /**
    * @var string[]
    */
@@ -36,12 +36,8 @@ class GcpUserAccessBinding extends \Google\Collection
    * @var string
    */
   public $name;
-  protected $reauthSettingsType = ReauthSettings::class;
-  protected $reauthSettingsDataType = '';
   protected $restrictedClientApplicationsType = Application::class;
   protected $restrictedClientApplicationsDataType = 'array';
-  protected $scopedAccessSettingsType = ScopedAccessSettings::class;
-  protected $scopedAccessSettingsDataType = 'array';
 
   /**
    * @param string[]
@@ -100,20 +96,6 @@ class GcpUserAccessBinding extends \Google\Collection
     return $this->name;
   }
   /**
-   * @param ReauthSettings
-   */
-  public function setReauthSettings(ReauthSettings $reauthSettings)
-  {
-    $this->reauthSettings = $reauthSettings;
-  }
-  /**
-   * @return ReauthSettings
-   */
-  public function getReauthSettings()
-  {
-    return $this->reauthSettings;
-  }
-  /**
    * @param Application[]
    */
   public function setRestrictedClientApplications($restrictedClientApplications)
@@ -126,20 +108,6 @@ class GcpUserAccessBinding extends \Google\Collection
   public function getRestrictedClientApplications()
   {
     return $this->restrictedClientApplications;
-  }
-  /**
-   * @param ScopedAccessSettings[]
-   */
-  public function setScopedAccessSettings($scopedAccessSettings)
-  {
-    $this->scopedAccessSettings = $scopedAccessSettings;
-  }
-  /**
-   * @return ScopedAccessSettings[]
-   */
-  public function getScopedAccessSettings()
-  {
-    return $this->scopedAccessSettings;
   }
 }
 

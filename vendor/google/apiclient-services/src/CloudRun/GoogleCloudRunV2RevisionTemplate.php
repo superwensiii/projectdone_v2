@@ -58,8 +58,6 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
    * @var string
    */
   public $serviceAccount;
-  protected $serviceMeshType = GoogleCloudRunV2ServiceMesh::class;
-  protected $serviceMeshDataType = '';
   /**
    * @var bool
    */
@@ -226,20 +224,6 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
   public function getServiceAccount()
   {
     return $this->serviceAccount;
-  }
-  /**
-   * @param GoogleCloudRunV2ServiceMesh
-   */
-  public function setServiceMesh(GoogleCloudRunV2ServiceMesh $serviceMesh)
-  {
-    $this->serviceMesh = $serviceMesh;
-  }
-  /**
-   * @return GoogleCloudRunV2ServiceMesh
-   */
-  public function getServiceMesh()
-  {
-    return $this->serviceMesh;
   }
   /**
    * @param bool

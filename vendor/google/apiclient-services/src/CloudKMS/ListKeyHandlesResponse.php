@@ -22,10 +22,6 @@ class ListKeyHandlesResponse extends \Google\Collection
   protected $collection_key = 'keyHandles';
   protected $keyHandlesType = KeyHandle::class;
   protected $keyHandlesDataType = 'array';
-  /**
-   * @var string
-   */
-  public $nextPageToken;
 
   /**
    * @param KeyHandle[]
@@ -40,20 +36,6 @@ class ListKeyHandlesResponse extends \Google\Collection
   public function getKeyHandles()
   {
     return $this->keyHandles;
-  }
-  /**
-   * @param string
-   */
-  public function setNextPageToken($nextPageToken)
-  {
-    $this->nextPageToken = $nextPageToken;
-  }
-  /**
-   * @return string
-   */
-  public function getNextPageToken()
-  {
-    return $this->nextPageToken;
   }
 }
 

@@ -268,10 +268,6 @@ class AndroidEnterprise extends \Google\Service
               'path' => 'androidenterprise/v1/enterprises/signupUrl',
               'httpMethod' => 'POST',
               'parameters' => [
-                'adminEmail' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
                 'callbackUrl' => [
                   'location' => 'query',
                   'type' => 'string',

@@ -42,8 +42,6 @@ class GoogleCloudDiscoveryengineV1SearchResponse extends \Google\Collection
   public $redirectUri;
   protected $resultsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResult::class;
   protected $resultsDataType = 'array';
-  protected $sessionInfoType = GoogleCloudDiscoveryengineV1SearchResponseSessionInfo::class;
-  protected $sessionInfoDataType = '';
   protected $summaryType = GoogleCloudDiscoveryengineV1SearchResponseSummary::class;
   protected $summaryDataType = '';
   /**
@@ -148,20 +146,6 @@ class GoogleCloudDiscoveryengineV1SearchResponse extends \Google\Collection
   public function getResults()
   {
     return $this->results;
-  }
-  /**
-   * @param GoogleCloudDiscoveryengineV1SearchResponseSessionInfo
-   */
-  public function setSessionInfo(GoogleCloudDiscoveryengineV1SearchResponseSessionInfo $sessionInfo)
-  {
-    $this->sessionInfo = $sessionInfo;
-  }
-  /**
-   * @return GoogleCloudDiscoveryengineV1SearchResponseSessionInfo
-   */
-  public function getSessionInfo()
-  {
-    return $this->sessionInfo;
   }
   /**
    * @param GoogleCloudDiscoveryengineV1SearchResponseSummary

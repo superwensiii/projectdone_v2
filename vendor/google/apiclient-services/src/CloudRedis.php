@@ -197,16 +197,6 @@ class CloudRedis extends \Google\Service
                   'type' => 'string',
                 ],
               ],
-            ],'rescheduleClusterMaintenance' => [
-              'path' => 'v1/{+name}:rescheduleClusterMaintenance',
-              'httpMethod' => 'POST',
-              'parameters' => [
-                'name' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ],
-              ],
             ],
           ]
         ]

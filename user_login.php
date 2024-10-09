@@ -257,6 +257,8 @@ function closeNotification() {
          </div>
          <input type="checkbox" onclick="myFunction()">Show Password
          <div class="g-recaptcha" data-sitekey="6Lci_U4qAAAAADpnsZ7iksRyKzezJJp2E5jsn_nf"></div>
+         <a class="small" href="resetpass.php">Forgot Password?</a>
+
          <input type="submit" value="Login Now" class="btn" name="submit">
          <p>Don't have an account? <a href="user_register.php" class="option-btn">Register Now</a></p>
 

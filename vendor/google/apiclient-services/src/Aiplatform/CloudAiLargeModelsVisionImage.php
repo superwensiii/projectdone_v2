@@ -24,10 +24,6 @@ class CloudAiLargeModelsVisionImage extends \Google\Model
    */
   public $encoding;
   /**
-   * @var int
-   */
-  public $generationSeed;
-  /**
    * @var string
    */
   public $image;
@@ -59,20 +55,6 @@ class CloudAiLargeModelsVisionImage extends \Google\Model
   public function getEncoding()
   {
     return $this->encoding;
-  }
-  /**
-   * @param int
-   */
-  public function setGenerationSeed($generationSeed)
-  {
-    $this->generationSeed = $generationSeed;
-  }
-  /**
-   * @return int
-   */
-  public function getGenerationSeed()
-  {
-    return $this->generationSeed;
   }
   /**
    * @param string

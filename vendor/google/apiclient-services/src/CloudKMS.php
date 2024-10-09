@@ -407,14 +407,6 @@ class CloudKMS extends \Google\Service
                   'location' => 'query',
                   'type' => 'string',
                 ],
-                'pageSize' => [
-                  'location' => 'query',
-                  'type' => 'integer',
-                ],
-                'pageToken' => [
-                  'location' => 'query',
-                  'type' => 'string',
-                ],
               ],
             ],
           ]

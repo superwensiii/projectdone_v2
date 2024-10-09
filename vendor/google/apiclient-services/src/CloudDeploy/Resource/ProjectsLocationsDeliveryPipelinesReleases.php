@@ -54,8 +54,8 @@ class ProjectsLocationsDeliveryPipelinesReleases extends \Google\Service\Resourc
    * Creates a new Release in a given project and location. (releases.create)
    *
    * @param string $parent Required. The parent collection in which the `Release`
-   * is created. The format is `projects/{project_id}/locations/{location_name}/de
-   * liveryPipelines/{pipeline_name}`.
+   * should be created. Format should be `projects/{project_id}/locations/{locatio
+   * n_name}/deliveryPipelines/{pipeline_name}`.
    * @param Release $postBody
    * @param array $optParams Optional parameters.
    *

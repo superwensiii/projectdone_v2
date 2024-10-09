@@ -31,31 +31,19 @@ class GoogleCloudAiplatformV1GenerationConfig extends \Google\Collection
   /**
    * @var int
    */
-  public $logprobs;
-  /**
-   * @var int
-   */
   public $maxOutputTokens;
   /**
    * @var float
    */
   public $presencePenalty;
   /**
-   * @var bool
-   */
-  public $responseLogprobs;
-  /**
    * @var string
    */
   public $responseMimeType;
-  protected $responseSchemaType = GoogleCloudAiplatformV1Schema::class;
-  protected $responseSchemaDataType = '';
-  protected $routingConfigType = GoogleCloudAiplatformV1GenerationConfigRoutingConfig::class;
-  protected $routingConfigDataType = '';
   /**
-   * @var int
+   * @var string
    */
-  public $seed;
+  public $responseStyle;
   /**
    * @var string[]
    */
@@ -104,20 +92,6 @@ class GoogleCloudAiplatformV1GenerationConfig extends \Google\Collection
   /**
    * @param int
    */
-  public function setLogprobs($logprobs)
-  {
-    $this->logprobs = $logprobs;
-  }
-  /**
-   * @return int
-   */
-  public function getLogprobs()
-  {
-    return $this->logprobs;
-  }
-  /**
-   * @param int
-   */
   public function setMaxOutputTokens($maxOutputTokens)
   {
     $this->maxOutputTokens = $maxOutputTokens;
@@ -144,20 +118,6 @@ class GoogleCloudAiplatformV1GenerationConfig extends \Google\Collection
     return $this->presencePenalty;
   }
   /**
-   * @param bool
-   */
-  public function setResponseLogprobs($responseLogprobs)
-  {
-    $this->responseLogprobs = $responseLogprobs;
-  }
-  /**
-   * @return bool
-   */
-  public function getResponseLogprobs()
-  {
-    return $this->responseLogprobs;
-  }
-  /**
    * @param string
    */
   public function setResponseMimeType($responseMimeType)
@@ -172,46 +132,18 @@ class GoogleCloudAiplatformV1GenerationConfig extends \Google\Collection
     return $this->responseMimeType;
   }
   /**
-   * @param GoogleCloudAiplatformV1Schema
+   * @param string
    */
-  public function setResponseSchema(GoogleCloudAiplatformV1Schema $responseSchema)
+  public function setResponseStyle($responseStyle)
   {
-    $this->responseSchema = $responseSchema;
+    $this->responseStyle = $responseStyle;
   }
   /**
-   * @return GoogleCloudAiplatformV1Schema
+   * @return string
    */
-  public function getResponseSchema()
+  public function getResponseStyle()
   {
-    return $this->responseSchema;
-  }
-  /**
-   * @param GoogleCloudAiplatformV1GenerationConfigRoutingConfig
-   */
-  public function setRoutingConfig(GoogleCloudAiplatformV1GenerationConfigRoutingConfig $routingConfig)
-  {
-    $this->routingConfig = $routingConfig;
-  }
-  /**
-   * @return GoogleCloudAiplatformV1GenerationConfigRoutingConfig
-   */
-  public function getRoutingConfig()
-  {
-    return $this->routingConfig;
-  }
-  /**
-   * @param int
-   */
-  public function setSeed($seed)
-  {
-    $this->seed = $seed;
-  }
-  /**
-   * @return int
-   */
-  public function getSeed()
-  {
-    return $this->seed;
+    return $this->responseStyle;
   }
   /**
    * @param string[]

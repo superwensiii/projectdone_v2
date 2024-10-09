@@ -24,10 +24,6 @@ class NetworkEndpoint extends \Google\Model
    */
   public $annotations;
   /**
-   * @var int
-   */
-  public $clientDestinationPort;
-  /**
    * @var string
    */
   public $fqdn;
@@ -57,20 +53,6 @@ class NetworkEndpoint extends \Google\Model
   public function getAnnotations()
   {
     return $this->annotations;
-  }
-  /**
-   * @param int
-   */
-  public function setClientDestinationPort($clientDestinationPort)
-  {
-    $this->clientDestinationPort = $clientDestinationPort;
-  }
-  /**
-   * @return int
-   */
-  public function getClientDestinationPort()
-  {
-    return $this->clientDestinationPort;
   }
   /**
    * @param string

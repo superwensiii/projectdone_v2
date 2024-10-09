@@ -181,8 +181,7 @@ class ProjectsLocationsFeaturestoresEntityTypesFeatures extends \Google\Service\
    * then only the non-empty fields present in the request will be overwritten.
    * Set the update_mask to `*` to override all fields. Updatable fields: *
    * `description` * `labels` * `disable_monitoring` (Not supported for
-   * FeatureRegistryService Feature) * `point_of_contact` (Not supported for
-   * FeaturestoreService FeatureStore)
+   * FeatureRegistry Feature)
    * @return GoogleCloudAiplatformV1Feature
    * @throws \Google\Service\Exception
    */

@@ -32,8 +32,6 @@ class GoogleMapsPlacesV1Place extends \Google\Collection
    * @var bool
    */
   public $allowsDogs;
-  protected $areaSummaryType = GoogleMapsPlacesV1PlaceAreaSummary::class;
-  protected $areaSummaryDataType = '';
   protected $attributionsType = GoogleMapsPlacesV1PlaceAttribution::class;
   protected $attributionsDataType = 'array';
   /**
@@ -68,8 +66,6 @@ class GoogleMapsPlacesV1Place extends \Google\Collection
   public $formattedAddress;
   protected $fuelOptionsType = GoogleMapsPlacesV1FuelOptions::class;
   protected $fuelOptionsDataType = '';
-  protected $generativeSummaryType = GoogleMapsPlacesV1PlaceGenerativeSummary::class;
-  protected $generativeSummaryDataType = '';
   /**
    * @var bool
    */
@@ -283,20 +279,6 @@ class GoogleMapsPlacesV1Place extends \Google\Collection
     return $this->allowsDogs;
   }
   /**
-   * @param GoogleMapsPlacesV1PlaceAreaSummary
-   */
-  public function setAreaSummary(GoogleMapsPlacesV1PlaceAreaSummary $areaSummary)
-  {
-    $this->areaSummary = $areaSummary;
-  }
-  /**
-   * @return GoogleMapsPlacesV1PlaceAreaSummary
-   */
-  public function getAreaSummary()
-  {
-    return $this->areaSummary;
-  }
-  /**
    * @param GoogleMapsPlacesV1PlaceAttribution[]
    */
   public function setAttributions($attributions)
@@ -463,20 +445,6 @@ class GoogleMapsPlacesV1Place extends \Google\Collection
   public function getFuelOptions()
   {
     return $this->fuelOptions;
-  }
-  /**
-   * @param GoogleMapsPlacesV1PlaceGenerativeSummary
-   */
-  public function setGenerativeSummary(GoogleMapsPlacesV1PlaceGenerativeSummary $generativeSummary)
-  {
-    $this->generativeSummary = $generativeSummary;
-  }
-  /**
-   * @return GoogleMapsPlacesV1PlaceGenerativeSummary
-   */
-  public function getGenerativeSummary()
-  {
-    return $this->generativeSummary;
   }
   /**
    * @param bool

@@ -25,10 +25,6 @@ class GoogleCloudDiscoveryengineV1DocumentInfo extends \Google\Collection
    */
   public $id;
   /**
-   * @var bool
-   */
-  public $joined;
-  /**
    * @var string
    */
   public $name;
@@ -58,20 +54,6 @@ class GoogleCloudDiscoveryengineV1DocumentInfo extends \Google\Collection
   public function getId()
   {
     return $this->id;
-  }
-  /**
-   * @param bool
-   */
-  public function setJoined($joined)
-  {
-    $this->joined = $joined;
-  }
-  /**
-   * @return bool
-   */
-  public function getJoined()
-  {
-    return $this->joined;
   }
   /**
    * @param string

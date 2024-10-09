@@ -17,9 +17,8 @@
 
 namespace Google\Service\DiscoveryEngine;
 
-class GoogleCloudDiscoveryengineV1FhirStoreSource extends \Google\Collection
+class GoogleCloudDiscoveryengineV1FhirStoreSource extends \Google\Model
 {
-  protected $collection_key = 'resourceTypes';
   /**
    * @var string
    */
@@ -28,10 +27,6 @@ class GoogleCloudDiscoveryengineV1FhirStoreSource extends \Google\Collection
    * @var string
    */
   public $gcsStagingDir;
-  /**
-   * @var string[]
-   */
-  public $resourceTypes;
 
   /**
    * @param string
@@ -60,20 +55,6 @@ class GoogleCloudDiscoveryengineV1FhirStoreSource extends \Google\Collection
   public function getGcsStagingDir()
   {
     return $this->gcsStagingDir;
-  }
-  /**
-   * @param string[]
-   */
-  public function setResourceTypes($resourceTypes)
-  {
-    $this->resourceTypes = $resourceTypes;
-  }
-  /**
-   * @return string[]
-   */
-  public function getResourceTypes()
-  {
-    return $this->resourceTypes;
   }
 }
 

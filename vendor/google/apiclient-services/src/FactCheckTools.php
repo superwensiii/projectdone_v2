@@ -34,9 +34,6 @@ use Google\Client;
  */
 class FactCheckTools extends \Google\Service
 {
-  /** Read, create, update, and delete your ClaimReview data.. */
-  const FACTCHECKTOOLS =
-      "https://www.googleapis.com/auth/factchecktools";
   /** See your primary Google Account email address. */
   const USERINFO_EMAIL =
       "https://www.googleapis.com/auth/userinfo.email";

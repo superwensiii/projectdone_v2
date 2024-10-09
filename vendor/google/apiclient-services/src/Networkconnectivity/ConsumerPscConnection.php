@@ -47,10 +47,6 @@ class ConsumerPscConnection extends \Google\Model
    */
   public $producerInstanceId;
   /**
-   * @var string[]
-   */
-  public $producerInstanceMetadata;
-  /**
    * @var string
    */
   public $project;
@@ -182,20 +178,6 @@ class ConsumerPscConnection extends \Google\Model
   public function getProducerInstanceId()
   {
     return $this->producerInstanceId;
-  }
-  /**
-   * @param string[]
-   */
-  public function setProducerInstanceMetadata($producerInstanceMetadata)
-  {
-    $this->producerInstanceMetadata = $producerInstanceMetadata;
-  }
-  /**
-   * @return string[]
-   */
-  public function getProducerInstanceMetadata()
-  {
-    return $this->producerInstanceMetadata;
   }
   /**
    * @param string

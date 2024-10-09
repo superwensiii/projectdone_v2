@@ -12,6 +12,21 @@
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+
+}
+
+#particles-js {
+
+   height: 200%;
+   background: black;
+}
+
+
+
 *{
    font-family: 'Nunito', sans-serif;
    margin:0; padding:0;
@@ -44,10 +59,8 @@ html{
    overflow-x: hidden;
 }
 
-body{
-   background: rgb(101,93,57);
-background: linear-gradient(90deg, rgba(101,93,57,0.9640231092436975) 5%, rgba(111,107,71,1) 35%, rgba(255,244,0,1) 89%, rgba(255,231,0,1) 100%);
-}section{
+
+section{
    padding:2rem;
    max-width: 1200px;
    margin:0 auto;

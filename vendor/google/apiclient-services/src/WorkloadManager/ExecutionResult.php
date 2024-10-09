@@ -17,11 +17,8 @@
 
 namespace Google\Service\WorkloadManager;
 
-class ExecutionResult extends \Google\Collection
+class ExecutionResult extends \Google\Model
 {
-  protected $collection_key = 'commands';
-  protected $commandsType = Command::class;
-  protected $commandsDataType = 'array';
   /**
    * @var string
    */
@@ -43,20 +40,6 @@ class ExecutionResult extends \Google\Collection
    */
   public $violationMessage;
 
-  /**
-   * @param Command[]
-   */
-  public function setCommands($commands)
-  {
-    $this->commands = $commands;
-  }
-  /**
-   * @return Command[]
-   */
-  public function getCommands()
-  {
-    return $this->commands;
-  }
   /**
    * @param string
    */

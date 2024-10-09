@@ -39,10 +39,6 @@ class PscConnection extends \Google\Model
    * @var string
    */
   public $pscConnectionId;
-  /**
-   * @var string
-   */
-  public $serviceAttachment;
 
   /**
    * @param string
@@ -113,20 +109,6 @@ class PscConnection extends \Google\Model
   public function getPscConnectionId()
   {
     return $this->pscConnectionId;
-  }
-  /**
-   * @param string
-   */
-  public function setServiceAttachment($serviceAttachment)
-  {
-    $this->serviceAttachment = $serviceAttachment;
-  }
-  /**
-   * @return string
-   */
-  public function getServiceAttachment()
-  {
-    return $this->serviceAttachment;
   }
 }
 

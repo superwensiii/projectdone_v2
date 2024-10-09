@@ -22,10 +22,6 @@ class V2ResourceEvent extends \Google\Model
   /**
    * @var string
    */
-  public $contextId;
-  /**
-   * @var string
-   */
   public $destinations;
   protected $parentType = ServicecontrolResource::class;
   protected $parentDataType = '';
@@ -44,20 +40,6 @@ class V2ResourceEvent extends \Google\Model
    */
   public $type;
 
-  /**
-   * @param string
-   */
-  public function setContextId($contextId)
-  {
-    $this->contextId = $contextId;
-  }
-  /**
-   * @return string
-   */
-  public function getContextId()
-  {
-    return $this->contextId;
-  }
   /**
    * @param string
    */

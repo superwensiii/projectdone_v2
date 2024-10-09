@@ -41,7 +41,6 @@ class Contactcenterinsights extends \Google\Service
   public $projects_locations;
   public $projects_locations_conversations;
   public $projects_locations_conversations_analyses;
-  public $projects_locations_encryptionSpec;
   public $projects_locations_insightsdata;
   public $projects_locations_issueModels;
   public $projects_locations_issueModels_issues;
@@ -74,17 +73,7 @@ class Contactcenterinsights extends \Google\Service
         'locations',
         [
           'methods' => [
-            'getEncryptionSpec' => [
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => [
-                'name' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ],
-              ],
-            ],'getSettings' => [
+            'getSettings' => [
               'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => [
@@ -318,26 +307,6 @@ class Contactcenterinsights extends \Google\Service
                 'pageToken' => [
                   'location' => 'query',
                   'type' => 'string',
-                ],
-              ],
-            ],
-          ]
-        ]
-    );
-    $this->projects_locations_encryptionSpec = new Contactcenterinsights\Resource\ProjectsLocationsEncryptionSpec(
-        $this,
-        $this->serviceName,
-        'encryptionSpec',
-        [
-          'methods' => [
-            'initialize' => [
-              'path' => 'v1/{+name}:initialize',
-              'httpMethod' => 'POST',
-              'parameters' => [
-                'name' => [
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
                 ],
               ],
             ],

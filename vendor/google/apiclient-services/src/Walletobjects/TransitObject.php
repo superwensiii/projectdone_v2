@@ -70,10 +70,6 @@ class TransitObject extends \Google\Collection
   protected $imageModulesDataDataType = 'array';
   protected $infoModuleDataType = InfoModuleData::class;
   protected $infoModuleDataDataType = '';
-  /**
-   * @var string[]
-   */
-  public $linkedObjectIds;
   protected $linksModuleDataType = LinksModuleData::class;
   protected $linksModuleDataDataType = '';
   protected $locationsType = LatLongPoint::class;
@@ -94,8 +90,6 @@ class TransitObject extends \Google\Collection
   protected $purchaseDetailsDataType = '';
   protected $rotatingBarcodeType = RotatingBarcode::class;
   protected $rotatingBarcodeDataType = '';
-  protected $saveRestrictionsType = SaveRestrictions::class;
-  protected $saveRestrictionsDataType = '';
   /**
    * @var string
    */
@@ -388,20 +382,6 @@ class TransitObject extends \Google\Collection
     return $this->infoModuleData;
   }
   /**
-   * @param string[]
-   */
-  public function setLinkedObjectIds($linkedObjectIds)
-  {
-    $this->linkedObjectIds = $linkedObjectIds;
-  }
-  /**
-   * @return string[]
-   */
-  public function getLinkedObjectIds()
-  {
-    return $this->linkedObjectIds;
-  }
-  /**
    * @param LinksModuleData
    */
   public function setLinksModuleData(LinksModuleData $linksModuleData)
@@ -512,20 +492,6 @@ class TransitObject extends \Google\Collection
   public function getRotatingBarcode()
   {
     return $this->rotatingBarcode;
-  }
-  /**
-   * @param SaveRestrictions
-   */
-  public function setSaveRestrictions(SaveRestrictions $saveRestrictions)
-  {
-    $this->saveRestrictions = $saveRestrictions;
-  }
-  /**
-   * @return SaveRestrictions
-   */
-  public function getSaveRestrictions()
-  {
-    return $this->saveRestrictions;
   }
   /**
    * @param string

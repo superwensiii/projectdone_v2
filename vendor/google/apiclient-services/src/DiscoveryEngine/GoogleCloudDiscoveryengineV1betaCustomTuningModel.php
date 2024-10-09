@@ -27,7 +27,6 @@ class GoogleCloudDiscoveryengineV1betaCustomTuningModel extends \Google\Model
    * @var string
    */
   public $displayName;
-  public $metrics;
   /**
    * @var string
    */
@@ -72,14 +71,6 @@ class GoogleCloudDiscoveryengineV1betaCustomTuningModel extends \Google\Model
   public function getDisplayName()
   {
     return $this->displayName;
-  }
-  public function setMetrics($metrics)
-  {
-    $this->metrics = $metrics;
-  }
-  public function getMetrics()
-  {
-    return $this->metrics;
   }
   /**
    * @param string

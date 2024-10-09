@@ -24,10 +24,6 @@ class CompilationResult extends \Google\Collection
   protected $codeCompilationConfigDataType = '';
   protected $compilationErrorsType = CompilationError::class;
   protected $compilationErrorsDataType = 'array';
-  /**
-   * @var string
-   */
-  public $createTime;
   protected $dataEncryptionStateType = DataEncryptionState::class;
   protected $dataEncryptionStateDataType = '';
   /**
@@ -82,20 +78,6 @@ class CompilationResult extends \Google\Collection
   public function getCompilationErrors()
   {
     return $this->compilationErrors;
-  }
-  /**
-   * @param string
-   */
-  public function setCreateTime($createTime)
-  {
-    $this->createTime = $createTime;
-  }
-  /**
-   * @return string
-   */
-  public function getCreateTime()
-  {
-    return $this->createTime;
   }
   /**
    * @param DataEncryptionState

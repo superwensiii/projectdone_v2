@@ -48,10 +48,6 @@ class ConnectSettings extends \Google\Collection
   public $region;
   protected $serverCaCertType = SslCert::class;
   protected $serverCaCertDataType = '';
-  /**
-   * @var string
-   */
-  public $serverCaMode;
 
   /**
    * @param string
@@ -164,20 +160,6 @@ class ConnectSettings extends \Google\Collection
   public function getServerCaCert()
   {
     return $this->serverCaCert;
-  }
-  /**
-   * @param string
-   */
-  public function setServerCaMode($serverCaMode)
-  {
-    $this->serverCaMode = $serverCaMode;
-  }
-  /**
-   * @return string
-   */
-  public function getServerCaMode()
-  {
-    return $this->serverCaMode;
   }
 }
 

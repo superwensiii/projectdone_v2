@@ -52,8 +52,6 @@ class StorageDatabasecenterPartnerapiV1mainDatabaseResourceMetadata extends \Goo
    * @var string
    */
   public $location;
-  protected $machineConfigurationType = StorageDatabasecenterPartnerapiV1mainMachineConfiguration::class;
-  protected $machineConfigurationDataType = '';
   protected $primaryResourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
   protected $primaryResourceIdDataType = '';
   protected $productType = StorageDatabasecenterProtoCommonProduct::class;
@@ -66,14 +64,16 @@ class StorageDatabasecenterPartnerapiV1mainDatabaseResourceMetadata extends \Goo
    * @var string
    */
   public $resourceName;
-  protected $tagsSetType = StorageDatabasecenterPartnerapiV1mainTags::class;
-  protected $tagsSetDataType = '';
   /**
    * @var string
    */
   public $updationTime;
   protected $userLabelSetType = StorageDatabasecenterPartnerapiV1mainUserLabels::class;
   protected $userLabelSetDataType = '';
+  /**
+   * @var string[]
+   */
+  public $userLabels;
 
   /**
    * @param StorageDatabasecenterPartnerapiV1mainAvailabilityConfiguration
@@ -230,20 +230,6 @@ class StorageDatabasecenterPartnerapiV1mainDatabaseResourceMetadata extends \Goo
     return $this->location;
   }
   /**
-   * @param StorageDatabasecenterPartnerapiV1mainMachineConfiguration
-   */
-  public function setMachineConfiguration(StorageDatabasecenterPartnerapiV1mainMachineConfiguration $machineConfiguration)
-  {
-    $this->machineConfiguration = $machineConfiguration;
-  }
-  /**
-   * @return StorageDatabasecenterPartnerapiV1mainMachineConfiguration
-   */
-  public function getMachineConfiguration()
-  {
-    return $this->machineConfiguration;
-  }
-  /**
    * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
    */
   public function setPrimaryResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $primaryResourceId)
@@ -300,20 +286,6 @@ class StorageDatabasecenterPartnerapiV1mainDatabaseResourceMetadata extends \Goo
     return $this->resourceName;
   }
   /**
-   * @param StorageDatabasecenterPartnerapiV1mainTags
-   */
-  public function setTagsSet(StorageDatabasecenterPartnerapiV1mainTags $tagsSet)
-  {
-    $this->tagsSet = $tagsSet;
-  }
-  /**
-   * @return StorageDatabasecenterPartnerapiV1mainTags
-   */
-  public function getTagsSet()
-  {
-    return $this->tagsSet;
-  }
-  /**
    * @param string
    */
   public function setUpdationTime($updationTime)
@@ -340,6 +312,20 @@ class StorageDatabasecenterPartnerapiV1mainDatabaseResourceMetadata extends \Goo
   public function getUserLabelSet()
   {
     return $this->userLabelSet;
+  }
+  /**
+   * @param string[]
+   */
+  public function setUserLabels($userLabels)
+  {
+    $this->userLabels = $userLabels;
+  }
+  /**
+   * @return string[]
+   */
+  public function getUserLabels()
+  {
+    return $this->userLabels;
   }
 }
 

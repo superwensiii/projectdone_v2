@@ -61,6 +61,11 @@
          <?php
             }
          ?>      
+
+<div id="particles-js"></div>
+<script type="text/javascipt" src="particles.js"></script>
+<script type="text/javascipt" src="app.js"></script>
+
          
          
       </div>

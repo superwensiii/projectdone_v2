@@ -3,6 +3,7 @@ include 'components/connect.php';
 include 'voucher_helper.php';  // Include the voucher helper
 
 
+
 session_start();
 
 if(isset($_SESSION['user_id'])){
