@@ -95,9 +95,12 @@ if(isset($_SESSION['user_id'])){
          </span>
       </p>
 
-      <?php if ($fetch_orders['payment_status'] != 'pending'): ?>
-         <a href="submit.php" value="<?= $fetch_orders['id']; ?>" class="option-btn">Order Received</a>
-      <?php endif; ?>
+      <a href="<?= $fetch_orders['payment_status'] == 'pending' ? '#' : 'submit.php' ?>" 
+   value="<?= $fetch_orders['id']; ?>" 
+   class="option-btn <?= $fetch_orders['payment_status'] == 'pending' ? 'disabled' : ''; ?>" 
+   <?= $fetch_orders['payment_status'] == 'pending' ? 'onclick="return false;"' : ''; ?>>
+    Order Received
+    </a>
    </div>
    
    <?php
@@ -113,6 +116,26 @@ if(isset($_SESSION['user_id'])){
 </section>
 
 <style>
+.option-btn {
+    background-color: #4CAF50; /* Default green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.option-btn.disabled {
+    background-color: gray; /* Gray for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+
    /* General Styles */
 body {
     font-family: Arial, sans-serif;
